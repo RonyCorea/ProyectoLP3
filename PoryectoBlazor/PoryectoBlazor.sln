@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoBlazor", "ProyectoBlazor\ProyectoBlazor.csproj", "{01ADCB1C-8E95-49A5-A64B-905323B3D130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{AA0037D7-C93D-42CE-B365-8E5969C45C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{4507CF63-CFC3-4794-BA38-8EAFB081F553}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01ADCB1C-8E95-49A5-A64B-905323B3D130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01ADCB1C-8E95-49A5-A64B-905323B3D130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01ADCB1C-8E95-49A5-A64B-905323B3D130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01ADCB1C-8E95-49A5-A64B-905323B3D130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA0037D7-C93D-42CE-B365-8E5969C45C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA0037D7-C93D-42CE-B365-8E5969C45C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA0037D7-C93D-42CE-B365-8E5969C45C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA0037D7-C93D-42CE-B365-8E5969C45C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4507CF63-CFC3-4794-BA38-8EAFB081F553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4507CF63-CFC3-4794-BA38-8EAFB081F553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4507CF63-CFC3-4794-BA38-8EAFB081F553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4507CF63-CFC3-4794-BA38-8EAFB081F553}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDAC5E7D-ACAF-4558-9119-8C324D3BBE7A}
+	EndGlobalSection
+EndGlobal
