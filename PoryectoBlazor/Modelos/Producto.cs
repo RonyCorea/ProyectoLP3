@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace Modelos;
-
+//
 public class Producto
 {
     [Required(ErrorMessage = "El Campo Codigo es Obligatorio")]
