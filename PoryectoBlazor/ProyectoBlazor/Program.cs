@@ -1,3 +1,4 @@
+using CurrieTechnologies.Razor.SweetAlert2;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using ProyectoBlazor.Data;
@@ -13,6 +14,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 MySQLConfiguration cadenaConexion = new MySQLConfiguration(builder.Configuration.GetConnectionString("MySQL"));
 builder.Services.AddSingleton(cadenaConexion);
 builder.Services.AddScoped<IProductoServicio, ProductoServicio>();
+builder.Services.AddSweetAlert2();
 
 var app = builder.Build();
 
