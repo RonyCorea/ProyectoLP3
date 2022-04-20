@@ -8,8 +8,19 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">Iniciar Sesión</a>
+         <div class="top-row px-4">
+        @*<AuthorizeView>
+            <Authorized>*@
+                <spam class="ml-md-auto">  
+                     @*Usuario Conectado: @context.User.Claims.First().Value*@
+                    <a href="/account/logout">Cerrar Sesión</a>
+                </spam>               
+            @*</Authorized>
+
+            <NotAuthorized>*@
+                <a href="/account/Login" class="ml-auto">Iniciar Sesión</a>
+            @* </NotAuthorized>
+        </AuthorizeView>>*@     
         </div>
 
         <article class="content px-4">
