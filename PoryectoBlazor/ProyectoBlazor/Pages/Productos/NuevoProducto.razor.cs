@@ -20,14 +20,14 @@ namespace ProyectoBlazor.Pages.Productos
                 return;
             }
 
-            bool edito = await productoServicio.Actualizar(product);
-            if (edito)
+            bool inserto = await productoServicio.Nuevo(product);
+            if (inserto)
             {
-                await Swal.FireAsync("Felicidades", "Producto actualizado con éxito", SweetAlertIcon.Success);
+                await Swal.FireAsync("Felicidades", "Producto creado con éxito", SweetAlertIcon.Success);
             }
             else
             {
-                await Swal.FireAsync("Error", "Producto no pudo ser actualizado", SweetAlertIcon.Error);
+                await Swal.FireAsync("Error", "Producto no pudo crear", SweetAlertIcon.Error);
             }
 
             navigationManager.NavigateTo("/Productos");
