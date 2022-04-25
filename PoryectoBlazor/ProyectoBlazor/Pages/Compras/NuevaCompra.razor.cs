@@ -36,5 +36,14 @@ namespace ProyectoBlazor.Pages.Compras
         {
             navigationManager.NavigateTo("/Compra");
         }
+
+        [Inject] private IProductoServicio _productoServicio { get; set; }
+
+        private IEnumerable<Producto> productosLista { get; set; }
+
+        protected override async Task OnInitializedAsync()
+        {
+            productosLista = await _productoServicio.GetLista();
+        }
     }
 }
