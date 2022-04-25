@@ -9,7 +9,7 @@
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
-        <AuthorizeView Roles="ADMINISTRADOR , USUARIO">
+        <AuthorizeView Roles="Administrador , Usuario">
             <Authorized>
                 <div class="nav-item px-3">
                     <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -19,7 +19,7 @@
             </Authorized>
         </AuthorizeView>
 
-        <AuthorizeView Roles="ADMINISTRADOR">
+        <AuthorizeView Roles="Administrador">
             <Authorized>
                 <div class="nav-item px-3">
                     <NavLink class="nav-link" href="Productos">
@@ -28,7 +28,7 @@
                 </div>
             </Authorized>
         </AuthorizeView>
-        <AuthorizeView Roles="ADMINISTRADOR, USUARIO">
+        <AuthorizeView Roles="Administrador, Usuario">
             <Authorized>
                 <div class="nav-item px-3">
                     <NavLink class="nav-link" href="Compra">
@@ -37,7 +37,7 @@
                 </div>
             </Authorized>
         </AuthorizeView>
-        <AuthorizeView Roles="ADMINISTRADOR, USUARIO">
+        <AuthorizeView Roles="Administrador, Usuario">
             <Authorized>
                 <div class="nav-item px-3">
                     <NavLink class="nav-link" href="fetchdata">

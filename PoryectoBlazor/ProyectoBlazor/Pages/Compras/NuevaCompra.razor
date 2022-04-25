@@ -1,0 +1,85 @@
+﻿@page "/Compra/Nuevo"
+
+<EditForm Model="@compra">
+    <DataAnnotationsValidator />
+    <h3>Agregar producto a comprar</h3>
+    <hr />
+
+     <div class="form-group row">
+        <label for="Id" class="col-sm-2 col-form-label">
+            Id compra
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="Id" class="form-control" placeholder="Id compra" @bind-Value=compra.Id />
+            <ValidationMessage For="@(() => compra.Id)" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="Cliente" class="col-sm-2 col-form-label">
+            Cliente
+        </label>
+        <div class="col-sm-10">
+            <InputText id="Cliente" class="form-control" placeholder="Cliente" @bind-Value=compra.Cliente />
+            <ValidationMessage For="@(() => compra.Cliente)" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="Fecha" class="col-sm-2 col-form-label">
+            Fecha
+        </label>
+        <div class="col-sm-10">
+            <InputDate id="Fecha" class="form-control" placeholder="Fecha" @bind-Value=compra.Fecha />
+            <ValidationMessage For="@(() => compra.Fecha)" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="SubTotal" class="col-sm-2 col-form-label">
+            Subtotal
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="SubTotal" class="form-control" placeholder="Subtotal" @bind-Value=compra.SubTotal />
+            <ValidationMessage For="@(() => compra.SubTotal)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Impuesto" class="col-sm-2 col-form-label">
+            Impuesto
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="Impuesto" class="form-control" placeholder="Impuesto" @bind-Value=compra.Impuesto />
+            <ValidationMessage For="@(() => compra.Impuesto)" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="Total" class="col-sm-2 col-form-label">
+            Total
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="Total" class="form-control" placeholder="Total" @bind-Value=compra.Total />
+            <ValidationMessage For="@(() => compra.Total)" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="CodigoProducto" class="col-sm-2 col-form-label">
+            Código del producto
+        </label>
+        <div class="col-sm-10">
+            <InputText id="CodigoProducto" class="form-control" placeholder="Código del producto" @bind-Value=compra.CodigoProducto />
+            <ValidationMessage For="@(() => compra.CodigoProducto)" />
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <p>
+            <input type="submit" class="btn-toolbar btn-primary" value="Comprar" @onclick="Comprar" />
+            <input type="submit" class="btn-toolbar btn-danger" value="Cancelar" @onclick="Cancelar" />
+        </p>
+
+    </div>
+</EditForm>
