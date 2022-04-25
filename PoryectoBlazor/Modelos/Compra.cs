@@ -8,7 +8,6 @@ public class Compra
     public int Id { get; set; }
     [Required(ErrorMessage = "El Campo Nombre del Cliente es Obligatorio")]
     public string Cliente { get; set; }
-    public DateTime Fecha { get; set; }
     public decimal SubTotal { get; set; }
     public decimal Impuesto { get; set; }
     public decimal Total { get; set; }

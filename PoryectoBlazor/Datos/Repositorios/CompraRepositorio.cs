@@ -31,7 +31,7 @@ public class CompraRepositorio : ICompraRepositorio
         {
             using MySqlConnection conexion = Conexion();
             await conexion.OpenAsync();
-            string sql = "INSERT INTO compra (Id, Cliente, Fecha, SubTotal, Impuesto, Total, CodigoProducto) VALUES (@Id, @Cliente, @Fecha, @SubTotal, @Impuesto, @Total, @CodigoProducto)";
+            string sql = "INSERT INTO compra (Id, Cliente, SubTotal, Impuesto, Total, CodigoProducto) VALUES (@Id, @Cliente, @SubTotal, @Impuesto, @Total, @CodigoProducto)";
             resultado = await conexion.ExecuteAsync(sql, compra);
             return resultado > 0;
         }
