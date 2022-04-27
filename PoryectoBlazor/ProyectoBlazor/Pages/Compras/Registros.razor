@@ -1,0 +1,40 @@
+﻿@page "/Registro"
+
+
+<br>
+<br>
+<h3>Lista de compras</h3>
+@if (comprasLista == null)
+{
+    <div class="spinner"></div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id Compra</th>
+                <th>Cliente</th>
+                <th>Subtotal</th>
+                <th>Impuesto</th>
+                <th>Total</th>
+                <th>Codigo del producto</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var compr in comprasLista)
+            {
+                <tr>
+                    <td>@compr.Id</td>
+                    <td>@compr.Cliente</td>
+                    <td>@compr.SubTotal</td>
+                    <td>@compr.Impuesto</td>
+                    <td>@compr.Total</td>
+                    <td>@compr.CodigoProducto</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
